@@ -1,0 +1,31 @@
+.btn {
+  color: var(--clr-text);
+  border: 2px solid var(--clr-text);
+  border-radius: var(--radius);
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  min-width: 10rem;
+  padding: 0.7rem 3rem;
+}
+
+.btn[type="submit"] {
+  width: 100%;
+}
+
+.isPrimary,
+.btn:hover {
+  font-weight: 700;
+  background: var(--clr-text);
+  color: var(--clr-bg);
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 30em) {
+  form .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,80 @@
+@font-face {
+  font-family: Vazirmatn;
+  src: url("./assets/Vazirmatn[wght].woff2");
+}
+
+:root {
+  --clr-text: #1f2d5c;
+  --clr-bg: #f6eee7;
+  --radius: 0.3rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: inherit;
+}
+
+html {
+  font: 62.5% Vazirmatn, sans-serif;
+  background: var(--clr-bg);
+  color: var(--clr-text);
+}
+
+body {
+  padding: 3rem 4rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+hr {
+  border: none;
+  background: var(--clr-text);
+  height: 2px;
+  width: 10rem;
+  margin: 2rem auto;
+}
+
+label {
+  cursor: pointer;
+}
+
+textarea {
+  font: inherit;
+  max-width: 50rem;
+  width: 100%;
+  border: 2px solid var(--clr-text);
+  border-radius: var(--radius);
+  height: 30rem;
+  resize: vertical;
+  padding: 1.5rem 2rem;
+  background: whitesmoke;
+}
+
+.toast {
+  transition: all 200ms;
+  position: fixed;
+  bottom: -10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid var(--clr-text);
+  padding: 0 2rem;
+  width: 100%;
+  max-width: 30rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+  color: var(--clr-bg);
+  background-color: var(--clr-text);
+  font-weight: bold;
+}
+
+.toast.active {
+  bottom: 1rem;
+}
